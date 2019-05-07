@@ -1,0 +1,2061 @@
+Started GET "/" for 127.0.0.1 at 2019-05-04 21:04:48 -0300
+  
+Mysql2::Error (Access denied for user 'root'@'localhost'):
+  
+mysql2 (0.5.2) lib/mysql2/client.rb:90:in `connect'
+mysql2 (0.5.2) lib/mysql2/client.rb:90:in `initialize'
+activerecord (5.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `new'
+activerecord (5.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:22:in `mysql2_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1014:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.3) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-05-04 21:05:16 -0300
+  
+ActiveRecord::NoDatabaseError (Unknown database 'remember_development'):
+  
+activerecord (5.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:26:in `rescue in mysql2_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1014:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.3) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `remember_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `remember_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /usr/local/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2019-05-04 21:10:45 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (7.6ms)
+Completed 200 OK in 103ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-04 21:15:58 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (513.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (356.5ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('1143268810739741490', 0)[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bin/rake:23
+Migrating to CreateAnnotations (20190505001215)
+  [1m[35m (403.6ms)[0m  [1m[35mCREATE TABLE `annotations` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `body` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190505001215_create_annotations.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190505001215')[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (50.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+Migrating to CreateFriends (20190505001352)
+  [1m[35m (353.1ms)[0m  [1m[35mCREATE TABLE `friends` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `address` varchar(255), `email` varchar(255), `phone` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190505001352_create_friends.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190505001352')[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (104.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-05-05 00:16:33', '2019-05-05 00:16:33')[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (52.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('1143268810739741490')[0m
+  ↳ /usr/local/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2019-05-04 21:16:43 -0300
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (1.5ms)
+Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends_path" for 127.0.0.1 at 2019-05-04 21:17:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/friends_path"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/friends_path" for 127.0.0.1 at 2019-05-04 21:17:55 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/friends_path"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/friends_path" for 127.0.0.1 at 2019-05-04 21:22:38 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/friends_path"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-05-04 21:22:42 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (3.7ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-05 14:55:58 -0300
+  [1m[35m (64.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 42ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-05 14:59:25 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1900ms (Views: 1898.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-05 15:03:14 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (75.3ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "Seja bem-vindo!":String):
+    1: <%= t('welcome')%>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb___310793352897322929_69946298905460'
+Started GET "/" for 127.0.0.1 at 2019-05-05 15:06:49 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "Seja bem-vindo!":String):
+    1: <%= t('welcome')%>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb___310793352897322929_69946267874020'
+Started GET "/" for 127.0.0.1 at 2019-05-05 15:07:21 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "Seja bem-vindo!":String):
+    1: <%= t('welcome')%>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb___310793352897322929_69946273142220'
+Started POST "/__web_console/repl_sessions/4dce7936116346901bac4bf338f5e448/trace" for 127.0.0.1 at 2019-05-05 15:08:06 -0300
+Started GET "/" for 127.0.0.1 at 2019-05-05 15:10:41 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "Seja bem-vindo!":String):
+    1: <%= t('inicio')%>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb___310793352897322929_69946273782240'
+Started GET "/" for 127.0.0.1 at 2019-05-05 15:13:08 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 42ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-05 15:15:44 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 81ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-05 15:16:35 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "Seja bem-vindo!":String):
+    1:  <%= t('hello') %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb___310793352897322929_46983272782200'
+Started GET "/" for 127.0.0.1 at 2019-05-05 15:16:53 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "Seja bem-vindo!":String):
+    1:  <%= t('hello') %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb___310793352897322929_46983281300020'
+Started GET "/" for 127.0.0.1 at 2019-05-05 15:27:36 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "Seja bem-vindo!":String):
+    1:  <%= t('hello') %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb___310793352897322929_69946265159800'
+Started GET "/" for 127.0.0.1 at 2019-05-05 15:27:49 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "Seja bem-vindo!":String):
+    1:  <%= t('hello') %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb___2242056482516912430_47293609936020'
+Started GET "/" for 127.0.0.1 at 2019-05-05 15:28:12 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can not load translations from /home/keylane/RubyonRails/remember/config/locales/pt-br_welcome.yml: #<Psych::SyntaxError: (<unknown>): did not find expected key while parsing a block mapping at line 1 column 2>):
+    1:  <%= t('hello') %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb___2242056482516912430_47293603273500'
+Started GET "/" for 127.0.0.1 at 2019-05-05 15:28:53 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "Seja bem-vindo!":String):
+    1:  <%= t('inicio') %>
+  
+app/views/welcome/index.html.erb:1:in `_app_views_welcome_index_html_erb___2242056482516912430_47293611549600'
+Started GET "/" for 127.0.0.1 at 2019-05-05 16:19:57 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 106ms (Views: 104.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annote" for 127.0.0.1 at 2019-05-05 16:20:04 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/annote"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/annotations_path" for 127.0.0.1 at 2019-05-05 16:20:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/annotations_path"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 16:20:23 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (36.8ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:14
+  Rendered annotations/index.html.erb within layouts/application (45.7ms)
+Completed 200 OK in 170ms (Views: 60.9ms | ActiveRecord: 37.9ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2019-05-05 16:20:33 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (19.6ms)
+  Rendered annotations/new.html.erb within layouts/application (20.8ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "Seja bem-vindo!":String):
+    12:   <% end %>
+    13: 
+    14:   <div class="field">
+    15:     <%= form.label :body %>
+    16:     <%= form.text_area :body %>
+    17:   </div>
+    18: 
+  
+app/views/annotations/_form.html.erb:15:in `block in _app_views_annotations__form_html_erb___2707177559537629234_70125210388080'
+app/views/annotations/_form.html.erb:1:in `_app_views_annotations__form_html_erb___2707177559537629234_70125210388080'
+app/views/annotations/new.html.erb:3:in `_app_views_annotations_new_html_erb___4092166655649816782_70125210291900'
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 16:20:37 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.4ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:14
+  Rendered annotations/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:20:42 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (23.9ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:17
+  Rendered friends/index.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 83ms (Views: 38.7ms | ActiveRecord: 25.1ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2019-05-05 16:20:44 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (21.3ms)
+  Rendered friends/new.html.erb within layouts/application (40.1ms)
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `deep_symbolize_keys' for "Seja bem-vindo!":String):
+    12:   <% end %>
+    13: 
+    14:   <div class="field">
+    15:     <%= form.label :name %>
+    16:     <%= form.text_field :name %>
+    17:   </div>
+    18: 
+  
+app/views/friends/_form.html.erb:15:in `block in _app_views_friends__form_html_erb__2027840970375092341_47293609456080'
+app/views/friends/_form.html.erb:1:in `_app_views_friends__form_html_erb__2027840970375092341_47293609456080'
+app/views/friends/new.html.erb:3:in `_app_views_friends_new_html_erb___4456927955834294665_47293609845900'
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:20:49 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:17
+  Rendered friends/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:21:01 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:17
+  Rendered friends/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2019-05-05 16:21:02 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (4.9ms)
+  Rendered friends/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 41ms (Views: 27.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/annotacion" for 127.0.0.1 at 2019-05-05 16:21:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/annotacion"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 16:21:21 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.2ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:14
+  Rendered annotations/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2019-05-05 16:21:23 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (94.9ms)
+  Rendered annotations/new.html.erb within layouts/application (96.2ms)
+Completed 200 OK in 136ms (Views: 129.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 16:21:33 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (1.2ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:14
+  Rendered annotations/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 54ms (Views: 49.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:21:38 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:17
+  Rendered friends/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2019-05-05 16:21:39 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (4.8ms)
+  Rendered friends/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 36ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:21:44 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:17
+  Rendered friends/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 67ms (Views: 62.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:22:42 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.9ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:17
+  Rendered friends/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 57ms (Views: 51.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-05 16:22:46 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-05 16:23:40 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 70ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2019-05-05 16:34:59 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 829ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__964196050648773466_47214219966780'
+Started GET "/" for 127.0.0.1 at 2019-05-05 16:35:20 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 16:35:41 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.4ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 16ms (Views: 12.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:35:57 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:36:35 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.5ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 74ms (Views: 67.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:36:49 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.0ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 66ms (Views: 62.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-05 16:36:55 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2019-05-05 16:38:34 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [22 times] (6.0ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.1ms)
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 38ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-05 16:40:16 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/root_path" for 127.0.0.1 at 2019-05-05 16:40:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/root_path"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/annotations_path" for 127.0.0.1 at 2019-05-05 16:40:26 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/annotations_path"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/annotations_path" for 127.0.0.1 at 2019-05-05 16:41:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/annotations_path"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-05-05 16:41:17 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-05 16:41:19 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 16:41:20 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (1.0ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 49ms (Views: 43.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:41:22 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-05 16:41:23 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 45ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-05 16:42:12 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 52ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 16:42:13 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (1.1ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 59ms (Views: 53.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:42:14 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.0ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 69ms (Views: 63.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:52:31 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (133.4ms)
+Completed 200 OK in 322ms (Views: 315.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-05 16:52:35 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 16:52:36 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (1.0ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 79ms (Views: 66.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:52:37 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.8ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 57ms (Views: 52.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 16:52:38 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 48ms (Views: 44.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2019-05-05 16:52:40 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (10.4ms)
+  Rendered annotations/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 50ms (Views: 28.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 16:52:42 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.8ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 55ms (Views: 50.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:52:43 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.1ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 67ms (Views: 62.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2019-05-05 16:52:44 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (4.0ms)
+  Rendered friends/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 27ms (Views: 17.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:52:46 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 63ms (Views: 57.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:58:42 -0300
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 189ms (Views: 183.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2019-05-05 16:58:46 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (14.4ms)
+  Rendered friends/new.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 65ms (Views: 35.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 16:58:50 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.8ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 69ms (Views: 56.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 16:58:51 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.0ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 78ms (Views: 74.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 17:06:59 -0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.8ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 53ms (Views: 49.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-05 17:07:00 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 17:07:03 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.5ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 25ms (Views: 20.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2019-05-05 17:07:04 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (2.4ms)
+  Rendered annotations/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 24ms (Views: 15.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/annotations" for 127.0.0.1 at 2019-05-05 17:07:11 -0300
+Processing by AnnotationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bm5P1LyDFGzN9GNBKup4pUKhu2b3Lz+Mn8J8vPn0fYTBXsmGS4MCBHlx0FaAt2vPg33GGzQirm5vw15T/LBWxQ==", "annotation"=>{"body"=>"Testando"}, "commit"=>"Criar Anotação"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/annotations_controller.rb:30
+  [1m[36mAnnotation Create (0.3ms)[0m  [1m[32mINSERT INTO `annotations` (`body`, `created_at`, `updated_at`) VALUES ('Testando', '2019-05-05 20:07:11', '2019-05-05 20:07:11')[0m
+  ↳ app/controllers/annotations_controller.rb:30
+  [1m[35m (201.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/annotations_controller.rb:30
+Redirected to http://localhost:3000/annotations/1
+Completed 302 Found in 208ms (ActiveRecord: 201.7ms)
+
+
+Started GET "/annotations/1" for 127.0.0.1 at 2019-05-05 17:07:12 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnnotation Load (1.0ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/annotations_controller.rb:67
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 86ms (Views: 35.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/annotations/1" for 127.0.0.1 at 2019-05-05 17:07:13 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnnotation Load (1.0ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/annotations_controller.rb:67
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 23ms (Views: 16.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/annotations/1" for 127.0.0.1 at 2019-05-05 17:07:15 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnnotation Load (0.3ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/annotations_controller.rb:67
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/annotations/1" for 127.0.0.1 at 2019-05-05 17:07:18 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnnotation Load (0.4ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/annotations_controller.rb:67
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/annotations/1" for 127.0.0.1 at 2019-05-05 17:07:20 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnnotation Load (0.4ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/annotations_controller.rb:67
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/annotations/1" for 127.0.0.1 at 2019-05-05 17:07:20 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnnotation Load (0.3ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/annotations_controller.rb:67
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 17:07:21 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.9ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 55ms (Views: 51.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/annotations/1" for 127.0.0.1 at 2019-05-05 17:07:23 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnnotation Load (1.0ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/annotations_controller.rb:67
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 51ms (Views: 43.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/annotations/1" for 127.0.0.1 at 2019-05-05 17:07:24 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnnotation Load (1.2ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/annotations_controller.rb:67
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 35ms (Views: 27.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/annotations/1/edit" for 127.0.0.1 at 2019-05-05 17:07:29 -0300
+Processing by AnnotationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAnnotation Load (0.9ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/annotations_controller.rb:67
+  Rendering annotations/edit.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (10.3ms)
+  Rendered annotations/edit.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 58ms (Views: 51.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 17:07:33 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.3ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 17:07:38 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.0ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 51ms (Views: 46.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2019-05-05 17:07:39 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (13.9ms)
+  Rendered friends/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 76ms (Views: 72.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2019-05-05 17:08:05 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uGAHpeqJ22B8jv4HlpkmvrXNsNr7hBCb5NgsW8Qa5ciS8diYySCM9hfc3s1P3OIa0ta+SGjsNrTnNh7mSLSLxg==", "friend"=>{"name"=>"Keylane", "address"=>"Aeroporto", "email"=>"keylane@gmail.com", "phone"=>"86 33445566"}, "commit"=>"Criar Amigos"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:30
+  [1m[36mFriend Create (0.2ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('Keylane', 'Aeroporto', 'keylane@gmail.com', '86 33445566', '2019-05-05 20:08:05', '2019-05-05 20:08:05')[0m
+  ↳ app/controllers/friends_controller.rb:30
+  [1m[35m (166.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:30
+Redirected to http://localhost:3000/friends/1
+Completed 302 Found in 174ms (ActiveRecord: 166.7ms)
+
+
+Started GET "/friends/1" for 127.0.0.1 at 2019-05-05 17:08:05 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFriend Load (0.8ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:67
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 43ms (Views: 37.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 17:09:54 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 17:10:05 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.3ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 17:11:03 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.3ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2019-05-05 17:11:04 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (9.4ms)
+  Rendered annotations/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2019-05-05 17:23:32 -0300
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (10.8ms)
+  Rendered annotations/new.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 190ms (Views: 179.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-05 17:23:35 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 17:23:36 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.9ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (61.5ms)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 4.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `total_pages' for #<Friend::ActiveRecord_Relation:0x00007f6bd1d725f0>):
+    43:             new_friend_path,
+    44:             :class => 'btn btn-primary' %>
+    45: 
+    46:             <%= will_paginate @friends %>
+  
+app/views/friends/index.html.erb:46:in `_app_views_friends_index_html_erb__3000018185443270435_70050379914040'
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 17:23:47 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `total_pages' for #<Friend::ActiveRecord_Relation:0x00007f6bb8031e90>):
+    43:             new_friend_path,
+    44:             :class => 'btn btn-primary' %>
+    45: 
+    46:             <%= will_paginate @friend %>
+  
+app/views/friends/index.html.erb:46:in `_app_views_friends_index_html_erb__3000018185443270435_70050312718000'
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 17:25:14 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT `friends`.* FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `total_pages' for #<Friend::ActiveRecord_Relation:0x00007f6bb8182100>):
+    43:             new_friend_path,
+    44:             :class => 'btn btn-primary' %>
+    45: 
+    46: <%= will_paginate @friends %>
+  
+app/views/friends/index.html.erb:46:in `_app_views_friends_index_html_erb__3000018185443270435_70050313406460'
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 17:26:14 -0300
+Processing by FriendsController#index as HTML
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `per_page' for #<FriendsController:0x00007f6bd1cd7168>):
+  
+app/controllers/friends_controller.rb:7:in `index'
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 17:26:39 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 17:26:43 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.4ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 26ms (Views: 20.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 17:26:44 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.9ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 53ms (Views: 48.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-05 17:26:44 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-05 17:26:45 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.2ms)[0m  [1m[34mSELECT `annotations`.* FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-05 17:26:46 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 58ms (Views: 53.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2019-05-05 17:26:59 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (17.5ms)
+  Rendered friends/new.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 54ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2019-05-06 12:10:21 -0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (5.7ms)
+  Rendered friends/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-06 12:10:24 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2019-05-06 12:10:25 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (9.9ms)
+  Rendered friends/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2019-05-06 12:10:56 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tu00xnN4OqWzMB34xyPZ5ZVCRY+NCVRi6yPZ9Q2RkShkfOv7UNFtM9hiPTIeZh1B8llLHR5hck3ozetIgT//Jg==", "friend"=>{"name"=>"Adriana", "address"=>"Mocambiho", "email"=>"adriana@adriana.com", "phone"=>"8699887766"}, "commit"=>"Criar Amigos"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:30
+  [1m[36mFriend Create (0.4ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('Adriana', 'Mocambiho', 'adriana@adriana.com', '8699887766', '2019-05-06 15:10:56', '2019-05-06 15:10:56')[0m
+  ↳ app/controllers/friends_controller.rb:30
+  [1m[35m (161.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:30
+Redirected to http://localhost:3000/friends/2
+Completed 302 Found in 165ms (ActiveRecord: 161.8ms)
+
+
+Started GET "/friends/2" for 127.0.0.1 at 2019-05-06 12:10:56 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:67
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-06 12:10:58 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 29ms (Views: 26.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2019-05-06 12:11:00 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (4.2ms)
+  Rendered friends/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2019-05-06 12:11:19 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VZvsCZuH2KAo/MC3r70zyKS26V/nIF4yl0IFNz8ExrV/CjM0uC6PNkOu4H12+Pdsw63nzXRIeB2UrDeKs6qouw==", "friend"=>{"name"=>"karyne", "address"=>"karyne", "email"=>"karyne", "phone"=>"1134567866"}, "commit"=>"Criar Amigos"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:30
+  [1m[36mFriend Create (0.3ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('karyne', 'karyne', 'karyne', '1134567866', '2019-05-06 15:11:19', '2019-05-06 15:11:19')[0m
+  ↳ app/controllers/friends_controller.rb:30
+  [1m[35m (163.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:30
+Redirected to http://localhost:3000/friends/3
+Completed 302 Found in 171ms (ActiveRecord: 164.4ms)
+
+
+Started GET "/friends/3" for 127.0.0.1 at 2019-05-06 12:11:20 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:67
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-06 12:11:21 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2019-05-06 12:11:22 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (5.0ms)
+  Rendered friends/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 30ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2019-05-06 12:11:35 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aaFJlI7ke4be+k4IcqjY6B35Bd5+TA+bL1xXFi5SgKJDMJaprU0sELWobsKr7RxMeuILTO0kKbQssmWrovzurA==", "friend"=>{"name"=>"sergio", "address"=>"sergio", "email"=>"sergoi", "phone"=>"1233445566"}, "commit"=>"Criar Amigos"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:30
+  [1m[36mFriend Create (0.2ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('sergio', 'sergio', 'sergoi', '1233445566', '2019-05-06 15:11:35', '2019-05-06 15:11:35')[0m
+  ↳ app/controllers/friends_controller.rb:30
+  [1m[35m (163.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:30
+Redirected to http://localhost:3000/friends/4
+Completed 302 Found in 166ms (ActiveRecord: 163.3ms)
+
+
+Started GET "/friends/4" for 127.0.0.1 at 2019-05-06 12:11:35 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:67
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-06 12:11:36 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.5ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2019-05-06 12:11:37 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (4.7ms)
+  Rendered friends/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2019-05-06 12:11:42 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5FAVOfaVT16RAzpz4UEs7fF7sZy2BhWogxu3zxd7jvTOwcoE1TwYyPpRGrk4BOhJlmC/DiVuM4eA9YVym9Xg+g==", "friend"=>{"name"=>"ok", "address"=>"ok", "email"=>"ok", "phone"=>"ok"}, "commit"=>"Criar Amigos"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:30
+  [1m[36mFriend Create (0.3ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('ok', 'ok', 'ok', 'ok', '2019-05-06 15:11:42', '2019-05-06 15:11:42')[0m
+  ↳ app/controllers/friends_controller.rb:30
+  [1m[35m (167.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:30
+Redirected to http://localhost:3000/friends/5
+Completed 302 Found in 175ms (ActiveRecord: 167.9ms)
+
+
+Started GET "/friends/5" for 127.0.0.1 at 2019-05-06 12:11:42 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mFriend Load (0.8ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:67
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 51ms (Views: 45.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-06 12:11:43 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/friends/index.html.erb:18
+  [1m[35m (79.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:46
+  Rendered friends/index.html.erb within layouts/application (90.1ms)
+Completed 200 OK in 100ms (Views: 19.1ms | ActiveRecord: 79.4ms)
+
+
+Started GET "/friends/new" for 127.0.0.1 at 2019-05-06 12:11:44 -0300
+Processing by FriendsController#new as HTML
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (4.0ms)
+  Rendered friends/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/friends" for 127.0.0.1 at 2019-05-06 12:11:57 -0300
+Processing by FriendsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KNjhvaQS/Zi8Niuu3cnIMSzRZlwtsnfaAyZMcXMBypUCST6Ah7uqDtdkC2QEjAyVS8pozr7aUfUAyH7M/6+kmw==", "friend"=>{"name"=>"Paula", "address"=>"paula", "email"=>"paula", "phone"=>"paula"}, "commit"=>"Criar Amigos"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:30
+  [1m[36mFriend Create (0.6ms)[0m  [1m[32mINSERT INTO `friends` (`name`, `address`, `email`, `phone`, `created_at`, `updated_at`) VALUES ('Paula', 'paula', 'paula', 'paula', '2019-05-06 15:11:57', '2019-05-06 15:11:57')[0m
+  ↳ app/controllers/friends_controller.rb:30
+  [1m[35m (228.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:30
+Redirected to http://localhost:3000/friends/6
+Completed 302 Found in 235ms (ActiveRecord: 229.6ms)
+
+
+Started GET "/friends/6" for 127.0.0.1 at 2019-05-06 12:11:58 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:67
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-06 12:11:59 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.6ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/friends/index.html.erb:18
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:46
+  Rendered friends/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/friends?page=2" for 127.0.0.1 at 2019-05-06 12:12:04 -0300
+Processing by FriendsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.8ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 5[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 34ms (Views: 30.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/friends?page=1" for 127.0.0.1 at 2019-05-06 12:12:07 -0300
+Processing by FriendsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.5ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/friends/index.html.erb:18
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:46
+  Rendered friends/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 36ms (Views: 30.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/friends?page=2" for 127.0.0.1 at 2019-05-06 12:12:10 -0300
+Processing by FriendsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.2ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 5[0m
+  ↳ app/views/friends/index.html.erb:18
+  Rendered friends/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-06 12:13:40 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.2ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2019-05-06 12:13:42 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (6.2ms)
+  Rendered annotations/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/annotations" for 127.0.0.1 at 2019-05-06 12:13:46 -0300
+Processing by AnnotationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mcHqxuBRvFWyDbKYI8iF9uhOCWtMS5r54nBhsn3c5d828WyUF1GqPQaIAY+JlZacKZJ0Fo9GCxsScUNdeJjOng==", "annotation"=>{"body"=>"ok"}, "commit"=>"Criar Anotação"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/annotations_controller.rb:30
+  [1m[36mAnnotation Create (1.6ms)[0m  [1m[32mINSERT INTO `annotations` (`body`, `created_at`, `updated_at`) VALUES ('ok', '2019-05-06 15:13:46', '2019-05-06 15:13:46')[0m
+  ↳ app/controllers/annotations_controller.rb:30
+  [1m[35m (173.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/annotations_controller.rb:30
+Redirected to http://localhost:3000/annotations/2
+Completed 302 Found in 185ms (ActiveRecord: 175.3ms)
+
+
+Started GET "/annotations/2" for 127.0.0.1 at 2019-05-06 12:13:46 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAnnotation Load (0.3ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/annotations_controller.rb:67
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 15ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-06 12:13:47 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.9ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 61ms (Views: 57.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2019-05-06 12:13:48 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (2.4ms)
+  Rendered annotations/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/annotations" for 127.0.0.1 at 2019-05-06 12:14:00 -0300
+Processing by AnnotationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MVQ/wgSkWrdq4JTP7MiYV6PwdfUErR1P3PcskfUUZmSeZLmQ86RM395lJ9hGlYs9YiwIiMegjK0s9g5+8FBNJQ==", "annotation"=>{"body"=>"teste teste"}, "commit"=>"Criar Anotação"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/annotations_controller.rb:30
+  [1m[36mAnnotation Create (0.1ms)[0m  [1m[32mINSERT INTO `annotations` (`body`, `created_at`, `updated_at`) VALUES ('teste teste', '2019-05-06 15:14:00', '2019-05-06 15:14:00')[0m
+  ↳ app/controllers/annotations_controller.rb:30
+  [1m[35m (131.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/annotations_controller.rb:30
+Redirected to http://localhost:3000/annotations/3
+Completed 302 Found in 135ms (ActiveRecord: 131.3ms)
+
+
+Started GET "/annotations/3" for 127.0.0.1 at 2019-05-06 12:14:00 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/annotations_controller.rb:67
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 22ms (Views: 17.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-06 12:14:01 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.3ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2019-05-06 12:14:02 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (1.8ms)
+  Rendered annotations/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/annotations" for 127.0.0.1 at 2019-05-06 12:14:07 -0300
+Processing by AnnotationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pF/amEuN1CXf3ybA0UOSrEXfkdKsb5T4ab3G4GotY7wLb1zKvI3CTWtaldd7HoHGhAPsr29iBRqZvOQPb2lI/Q==", "annotation"=>{"body"=>"chega chega"}, "commit"=>"Criar Anotação"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/annotations_controller.rb:30
+  [1m[36mAnnotation Create (0.6ms)[0m  [1m[32mINSERT INTO `annotations` (`body`, `created_at`, `updated_at`) VALUES ('chega chega', '2019-05-06 15:14:07', '2019-05-06 15:14:07')[0m
+  ↳ app/controllers/annotations_controller.rb:30
+  [1m[35m (170.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/annotations_controller.rb:30
+Redirected to http://localhost:3000/annotations/4
+Completed 302 Found in 174ms (ActiveRecord: 171.3ms)
+
+
+Started GET "/annotations/4" for 127.0.0.1 at 2019-05-06 12:14:07 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAnnotation Load (0.3ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/annotations_controller.rb:67
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-06 12:14:08 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.2ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2019-05-06 12:14:09 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (9.0ms)
+  Rendered annotations/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 57ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/annotations" for 127.0.0.1 at 2019-05-06 12:14:13 -0300
+Processing by AnnotationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e8HmQqrP6YKWc6NIbOXzTzqzM7uEhwNUDjWm6qr7LTPU8WAQXc//6iL2EF/GuOAl+29OxkeKkrb+NIQFr78Gcg==", "annotation"=>{"body"=>"voltando"}, "commit"=>"Criar Anotação"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/annotations_controller.rb:30
+  [1m[36mAnnotation Create (0.3ms)[0m  [1m[32mINSERT INTO `annotations` (`body`, `created_at`, `updated_at`) VALUES ('voltando', '2019-05-06 15:14:13', '2019-05-06 15:14:13')[0m
+  ↳ app/controllers/annotations_controller.rb:30
+  [1m[35m (120.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/annotations_controller.rb:30
+Redirected to http://localhost:3000/annotations/5
+Completed 302 Found in 125ms (ActiveRecord: 120.9ms)
+
+
+Started GET "/annotations/5" for 127.0.0.1 at 2019-05-06 12:14:13 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAnnotation Load (0.9ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/annotations_controller.rb:67
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 27ms (Views: 20.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-06 12:14:14 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.3ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/annotations/index.html.erb:15
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:40
+  Rendered annotations/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/annotations/new" for 127.0.0.1 at 2019-05-06 12:14:15 -0300
+Processing by AnnotationsController#new as HTML
+  Rendering annotations/new.html.erb within layouts/application
+  Rendered annotations/_form.html.erb (7.7ms)
+  Rendered annotations/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/annotations" for 127.0.0.1 at 2019-05-06 12:14:19 -0300
+Processing by AnnotationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EZ2mZq3h8tXerWF5/MeyopivSYdj3qyqLzFgUfsqHA6+rSA0WuHkvWoo0m5WmqHIWXM0+qDTPUjfMEK+/m43Tw==", "annotation"=>{"body"=>"tá bom!"}, "commit"=>"Criar Anotação"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/annotations_controller.rb:30
+  [1m[36mAnnotation Create (0.3ms)[0m  [1m[32mINSERT INTO `annotations` (`body`, `created_at`, `updated_at`) VALUES ('tá bom!', '2019-05-06 15:14:19', '2019-05-06 15:14:19')[0m
+  ↳ app/controllers/annotations_controller.rb:30
+  [1m[35m (190.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/annotations_controller.rb:30
+Redirected to http://localhost:3000/annotations/6
+Completed 302 Found in 194ms (ActiveRecord: 190.9ms)
+
+
+Started GET "/annotations/6" for 127.0.0.1 at 2019-05-06 12:14:19 -0300
+Processing by AnnotationsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mAnnotation Load (0.2ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` WHERE `annotations`.`id` = 6 LIMIT 1[0m
+  ↳ app/controllers/annotations_controller.rb:67
+  Rendering annotations/show.html.erb within layouts/application
+  Rendered annotations/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-06 12:14:20 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.8ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/annotations/index.html.erb:15
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:40
+  Rendered annotations/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 41ms (Views: 36.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/annotations?page=2" for 127.0.0.1 at 2019-05-06 12:14:24 -0300
+Processing by AnnotationsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.4ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` LIMIT 5 OFFSET 5[0m
+  ↳ app/views/annotations/index.html.erb:15
+  Rendered annotations/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 25ms (Views: 21.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/annotations?page=1" for 127.0.0.1 at 2019-05-06 12:14:28 -0300
+Processing by AnnotationsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.6ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/annotations/index.html.erb:15
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:40
+  Rendered annotations/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 35ms (Views: 30.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-06 12:14:55 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-06 12:14:57 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.9ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/annotations/index.html.erb:15
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:40
+  Rendered annotations/index.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 54ms (Views: 48.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-06 12:14:59 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.4ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/friends/index.html.erb:18
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:46
+  Rendered friends/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 58ms (Views: 44.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/annotations" for 127.0.0.1 at 2019-05-06 12:15:00 -0300
+Processing by AnnotationsController#index as HTML
+  Rendering annotations/index.html.erb within layouts/application
+  [1m[36mAnnotation Load (0.7ms)[0m  [1m[34mSELECT  `annotations`.* FROM `annotations` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/annotations/index.html.erb:15
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `annotations`[0m
+  ↳ app/views/annotations/index.html.erb:40
+  Rendered annotations/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 42ms (Views: 36.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-06 12:15:01 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (0.3ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/friends/index.html.erb:18
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:46
+  Rendered friends/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/friends/3" for 127.0.0.1 at 2019-05-06 12:15:05 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFriend Load (1.1ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:67
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 36ms (Views: 26.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/friends/3" for 127.0.0.1 at 2019-05-06 12:15:06 -0300
+Processing by FriendsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFriend Load (0.9ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` WHERE `friends`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:67
+  Rendering friends/show.html.erb within layouts/application
+  Rendered friends/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 30ms (Views: 23.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/friends" for 127.0.0.1 at 2019-05-06 12:15:07 -0300
+Processing by FriendsController#index as HTML
+  Rendering friends/index.html.erb within layouts/application
+  [1m[36mFriend Load (1.4ms)[0m  [1m[34mSELECT  `friends`.* FROM `friends` LIMIT 5 OFFSET 0[0m
+  ↳ app/views/friends/index.html.erb:18
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `friends`[0m
+  ↳ app/views/friends/index.html.erb:46
+  Rendered friends/index.html.erb within layouts/application (46.2ms)
+Completed 200 OK in 75ms (Views: 68.5ms | ActiveRecord: 1.8ms)
+
+
